@@ -1155,12 +1155,12 @@ $(document).ready(function() {
 		// ----------------------------------------
 		// MORE JS
 		var dataJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/zakharyshka/Tildaa/6769e674ed77d96ca34c6ac3ecaf08a1419d5684/Tilda-HTML5-Shipping.data.js'));
-		var utilityJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('Utility.js')).then(addScriptToDom);
+		var utilityJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/zakharyshka/Tildaa/83eedd01513702859a0c2d4259594f992f432012/Utility.js')).then(addScriptToDom);
 		var dataDownload =
 /* // The following code would download and store the .data file as a Blob, which should be more efficient than loading an ArrayBuffer. However that seems to be buggy, so avoid it for now.
 			fetchOrDownloadAndStore(db, Module.locateFile('Tilda-HTML5-Shipping.data')).then(function(dataBlob) {
 				return readBlobToArrayBuffer(dataBlob).then(function(dataArrayBuffer) {
-					Module['preloadedPackages'] = {};
+					Module['preloadedPackages'] = {};https://rawcdn.githack.com/zakharyshka/Tildaa/83eedd01513702859a0c2d4259594f992f432012/Utility.js
 					Module['preloadedPackages'][Module.locateFile('Tilda-HTML5-Shipping.data')] = dataArrayBuffer;
 					return dataJsDownload.then(addScriptToDom);
 				})
